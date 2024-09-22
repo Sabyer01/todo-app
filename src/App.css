@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url(background.gif);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 700px;
+  margin: 70px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #111111;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 15px;
+  
+}
+
+.todo-form button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.todo-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.todo-table th,.todo-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-item td span {
+  text-align: left;
+}
+
+.todo-item.completed td span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.todo-item td {
+  text-align: left;
+}
+
+.btn-group {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.btn {
+  padding: 9px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  
+}
+
+.btn.complete, .btn.save {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn.edit {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn.remove, .btn.cancel {
+  background-color: #dc3545;
+  color: white;
+}
+
+.no-todos {
+  text-align: center;
+  color: #111111;
+  font-size: 25px;
+}
+
+.btn.complete:hover, .btn.save:hover, .todo-form button:hover {
+  background-color: #23963e;
+  color: white;
+}
+
+.btn.remove:hover, .btn.cancel:hover {
+  background-color: #c02e3d;
+  color: white;
+}
+
+.btn.edit:hover {
+  background-color: #016cdf;
+  color: white;
+}
+
+
